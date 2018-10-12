@@ -17,7 +17,8 @@ To convert integers into roman numbers we also need to use a lookup table as wel
 Here is how the logic will work:
 
 ```shell
-  - divide the given number with the current highest roman letter value and store it in an integer called numTimes(for example, the given number divided by 'M' in first division within the for loop)
-  - repeatingly append to the end of the string until numTimes amount of times.
-  - repeat the division step but with the roman letter with next highest value. Repeat until we have appended all the needed letters.
+  - divide the given number with the current highest roman letter value.
+  - store that value into an integer called numTimes.
+  - repeatingly append the current highest roman letter for numTimes amount of times.
+  - repeat the division step with all other roman numbers from highest value to lowest.
 ```
