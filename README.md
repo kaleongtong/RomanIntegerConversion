@@ -5,9 +5,11 @@ To convert roman numbers into integer we need to use a lookup table that maps ro
 Here is how the logic will work:
 
 ```shell
-  - for each letter in the string check if the value for next letter is greater than the current letter in value.
-  If it is, subtract the value of the current letter from the value of the next letter. Retrieve this value and added to the accumulated value.
-  - If value of current letter is greater than the value of next letter then add the value of the current letter to the accumulated value we eventually return. Increment the current index by one.
+  - check if the value of current letter is less than the next letter.
+  - If it is, subtract the value of the current letter from the value of the next letter. 
+  - Afterward, retrieve this value and added to the accumulated value and increment the index by 2.
+  - Otherwise, If value of current letter is greater then add its count to the accumulated value. 
+  - Increment the index by 1.
 ```
 
 To convert integers into roman numbers we also need to use a lookup table as well. 
